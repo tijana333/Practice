@@ -1,16 +1,10 @@
-const btn1 = document.getElementById("btn1");
-const btn2 = document.getElementById("btn2");
+const buttons = document.querySelectorAll(".color-btn"g);
 
-btn1.addEventListener("click", function () {
-  btn1.classList.remove("active");
-  btn2.classList.remove("active");
-
-  btn1.classList.add("active");
-});
-
-btn2.addEventListener("click", function () {
-  btn1.classList.remove("active");
-  btn2.classList.remove("active");
-
-  btn2.classList.add("active");
+buttons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    buttons.forEach(function (btn) {
+      btn.classList.remove("active");
+    });
+    button.classList.add("active");
+  });
 });

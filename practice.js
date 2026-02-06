@@ -1,5 +1,16 @@
-const button4 = document.getElementById("myButton4");
+const btn1 = document.getElementById("btn1");
+const btn2 = document.getElementById("btn2");
 
-button4.addEventListener("click", function () {
-  button4.classList.toggle("active");
+btn1.addEventListener("click", function () {
+  btn1.classList.remove("active");
+  btn2.classList.remove("active");
+
+  btn1.classList.add("active");
+});
+
+btn2.addEventListener("click", function () {
+  btn1.classList.remove("active");
+  btn2.classList.remove("active");
+
+  btn2.classList.add("active");
 });

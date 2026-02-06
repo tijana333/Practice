@@ -1,6 +1,5 @@
-const button = document.getElementById("myButton");
-const message = document.getElementById("message");
+const button3 = document.getElementById("myButton3");
 
-button.addEventListener("click", function () {
-  message.textContent = "cliked!";
+button3.addEventListener("click", function () {
+  button3.classList.add("active");
 });

@@ -1,5 +1,5 @@
-const button3 = document.getElementById("myButton3");
+const button4 = document.getElementById("myButton4");
 
-button3.addEventListener("click", function () {
-  button3.classList.add("active");
+button4.addEventListener("click", function () {
+  button4.classList.toggle("active");
 });
